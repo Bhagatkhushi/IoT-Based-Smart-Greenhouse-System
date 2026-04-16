@@ -24,11 +24,25 @@ This project is an IoT-based system that monitors and controls environmental con
 
 ## Working
 
-Sensors collect real-time data and send it to Arduino. Based on threshold values:
+The system continuously monitors environmental conditions inside the greenhouse using multiple sensors.
 
-* Fan turns ON/OFF based on temperature
-* Pump activates when soil is dry
-* Light turns ON in low light conditions
+* The **DHT11 sensor** measures temperature and humidity.
+* The **soil moisture sensor** detects the water level in the soil.
+* The **LDR sensor** measures light intensity.
+
+All sensor data is sent to the Arduino microcontroller, where it is processed.
+
+Based on predefined threshold values:
+
+* If temperature is high, the fan is turned ON.
+* If humidity exceeds the limit, ventilation is activated.
+* If soil moisture is low, the water pump is turned ON.
+* If light intensity is low, artificial light is switched ON.
+
+The current values of temperature, humidity, soil moisture, and light are displayed on the LCD screen.
+
+This system works automatically without human intervention, helping to maintain optimal conditions for plant growth.
+
 
 ## Code
 
