@@ -48,6 +48,14 @@ This system works automatically without human intervention, helping to maintain 
 
 The Arduino code is included in this repository.
 
+## Project Images
+
+<p align="center">
+  <img src="images/1.jpeg" width="400"/>
+  <img src="images/3.jpeg" width="400"/>
+  <img src="images/4.jpeg" width="400"/>
+</p>
+
 ## Applications
 
 * Smart Agriculture
