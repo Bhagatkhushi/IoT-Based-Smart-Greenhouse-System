@@ -56,11 +56,14 @@ The Arduino code is included in this repository.
   <img src="images/4.jpeg" width="400"/>
 </p>
 
-## Applications
+## Future Enhancement
 
-* Smart Agriculture
-* Greenhouse Automation
-* IoT Monitoring Systems
+- IoT integration for remote monitoring
+- Mobile app for real-time data and control
+- Cloud storage and data analytics
+- Alert system for critical conditions
+- Integration of advanced sensors
+- Solar-powered system for energy efficiency
 
 ## Author
 
