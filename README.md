@@ -1,17 +1,17 @@
-# IoT Based Greenhouse Monitoring and Control System
+# Smart Environment Monitoring System
 
 ## Overview
 
-This project is an IoT-based system that monitors and controls environmental conditions in a greenhouse using Arduino.
+This project is an Arduino-based Smart Environment Monitoring System that measures and displays environmental parameters such as temperature, humidity, soil moisture, and light intensity.It also automatically controls devices like fan, water pump, and light based on real-time conditions.
 
 ## Features
 
-* Temperature Monitoring (DHT11)
-* Humidity Monitoring
-* Soil Moisture Detection
-* Light Intensity Detection (LDR)
-* Automatic Control (Fan, Pump, Light)
-* LCD Display Output
+* Temperature and Humidity monitoring using DHT11 sensor
+* Soil moisture detection for smart irrigation
+* Light intensity detection using LDR
+* Automatic control of fan, pump, and light
+* Real-time data display on 16x2 LCD
+* Serial Monitor output for debugging
 
 ## Hardware Components
 
@@ -62,7 +62,6 @@ The Arduino code is included in this repository.
 - Mobile app for real-time data and control
 - Cloud storage and data analytics
 - Alert system for critical conditions
-- Integration of advanced sensors
 - Solar-powered system for energy efficiency
 
 ## Author
