@@ -2,52 +2,61 @@
 
 ## Overview
 
-This project is an IoT-Based Smart Greenhouse Monitoring and Control System that monitors temperature, humidity, soil moisture, and light intensity using sensors. It automatically controls the fan, water pump, and light according to environmental conditions.
+This project is an IoT-based smart greenhouse system that monitors temperature, humidity, soil moisture, and sunlight and automatically controls devices based on environmental conditions. Sensor data can be monitored using NodeMCU (ESP8266) and Blynk IoT.
 
 ## Features
 
-* Temperature and Humidity monitoring using DHT11 sensor
-* Soil moisture detection for smart irrigation
-* Light intensity detection using LDR
-* Automatic control of fan, pump, and light
-* Real-time data display on 16x2 LCD
-* Serial Monitor output for debugging
+* Temperature monitoring
+* Soil moisture monitoring
+* Humidity monitoring
+* Sunlight/light intensity monitoring
+* Automatic control of connected devices
+* Real-time monitoring using Blynk IoT
+* LCD display for sensor readings
+* Wi-Fi connectivity using NodeMCU/ESP8266
 
 ## Hardware Components
 
 * Arduino UNO
-* DHT11 Sensor
+* NodeMCU (ESP8266)
+* DHT11 Temperature & Humidity Sensor
 * Soil Moisture Sensor
-* LDR Sensor
-* LCD (I2C)
+* LDR / Light Sensor
+* LCD Display
 * Relay Module
+* DC Motor / Fan
+* Water Pump
+* Artificial Light
+* Connecting Wires & Breadboard
 
 ## Software Components
 
 * Arduino IDE
-* Embedded C
+* Embedded C / C++
+* NodeMCU / ESP8266
+* Wi-Fi
+* Blynk IoT Application
 
 ## Working
 
 The system continuously monitors environmental conditions inside the greenhouse using multiple sensors.
 
-* The **DHT11 sensor** measures temperature and humidity.
-* The **soil moisture sensor** detects the water level in the soil.
-* The **LDR sensor** measures light intensity.
+The DHT11 sensor measures temperature and humidity.
+The soil moisture sensor detects soil moisture level.
+The LDR sensor measures light intensity.
 
-All sensor data is sent to the Arduino microcontroller, where it is processed.
+All sensor data is processed by the Arduino and sent to the NodeMCU (ESP8266) for IoT monitoring.
 
 Based on predefined threshold values:
 
-* If temperature is high, the fan is turned ON.
-* If humidity exceeds the limit, ventilation is activated.
-* If soil moisture is low, the water pump is turned ON.
-* If light intensity is low, artificial light is switched ON.
+If temperature is high, the fan is turned ON.
+If humidity exceeds the limit, ventilation is activated.
+If soil moisture is low, the water pump is turned ON.
+If light intensity is low, artificial light is switched ON.
 
-The current values of temperature, humidity, soil moisture, and light are displayed on the LCD screen.
+The current values are displayed on the LCD and can also be monitored through the Blynk IoT application.
 
-This system works automatically without human intervention, helping to maintain optimal conditions for plant growth.
-
+This system works automatically, helping maintain suitable conditions for plant growth.
 
 ## Code
 
