@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is an Arduino-based Smart Environment Monitoring System that measures and displays environmental parameters such as temperature, humidity, soil moisture, and light intensity.It also automatically controls devices like fan, water pump, and light based on real-time conditions.
+This project is an IoT-Based Smart Greenhouse Monitoring and Control System that monitors temperature, humidity, soil moisture, and light intensity using sensors. It automatically controls the fan, water pump, and light according to environmental conditions.
 
 ## Features
 
