@@ -31,7 +31,7 @@ void setup()
 
   lcd.setCursor(0, 0);
   lcd.print("Initializing...");
-  
+
   dht.begin();
   delay(2000);
 }
@@ -43,7 +43,8 @@ void loop()
   float t = dht.readTemperature();
 
   // Check sensor error
-  if (isnan(h) || isnan(t)) {
+  if (isnan(h) || isnan(t))
+  {
     Serial.println("DHT Error!");
     return;
   }
@@ -75,17 +76,21 @@ void loop()
   lcd.print(ldr);
   lcd.print("% ");
 
-  // Control Logic
+  // Control Logic - SAME AS ORIGINAL
   digitalWrite(TEMP_PIN, (t > 40) ? HIGH : LOW);
   digitalWrite(HUM_PIN, (h > 50) ? HIGH : LOW);
   digitalWrite(MOIS_PIN, (mois < 60) ? HIGH : LOW);
   digitalWrite(LDR_PIN, (ldr < 70) ? HIGH : LOW);
 
   // Serial Output
-  Serial.print("Temp: "); Serial.print(t); Serial.print("C ");
-  Serial.print("Humi: "); Serial.print(h); Serial.print("% ");
-  Serial.print("Mois: "); Serial.print(mois); Serial.print("% ");
-  Serial.print("LDR: "); Serial.print(ldr); Serial.println("%");
+  Serial.print("DATA,");
+  Serial.print(t);
+  Serial.print(",");
+  Serial.print(h);
+  Serial.print(",");
+  Serial.print(mois);
+  Serial.print(",");
+  Serial.println(ldr);
 
   delay(2000);
 }
