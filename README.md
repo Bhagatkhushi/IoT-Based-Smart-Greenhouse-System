@@ -1,4 +1,4 @@
-# Smart Environment Monitoring System
+# IoT-Based Smart Greenhouse System
 
 ## Overview
 
