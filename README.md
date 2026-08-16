@@ -22,6 +22,11 @@ This project is an IoT-Based Smart Greenhouse Monitoring and Control System that
 * LCD (I2C)
 * Relay Module
 
+## Software Components
+
+* Arduino IDE
+* Embedded C
+
 ## Working
 
 The system continuously monitors environmental conditions inside the greenhouse using multiple sensors.
